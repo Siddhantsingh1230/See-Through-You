@@ -31,8 +31,8 @@
         background-color: black;
 
         border: 2px solid hotpink;
-        overflow :hidden;
-        box-sizing: border-box;
+        
+        
 
       }
 
@@ -57,10 +57,10 @@
       <audio id="audio" autoplay></audio>
 
     </div>
-    <!-- <button id="aud" onclick="audio()">Mute 🔊</button>
+     <button id="aud" onclick="audio()">Mute 🔊</button>
 
     <button id="vid" onclick="video()">Mute 📷</button>
--->
+
     <script>
       let a=true;
 
@@ -75,7 +75,7 @@ let v=true;
 
       // Get Audio 
 
-      navigator.mediaDevices.getUserMedia({ video: true,audio: true})
+      navigator.mediaDevices.getUserMedia({ video: v,audio: a})
 
         .then((playback) => {
 
