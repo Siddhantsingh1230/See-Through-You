@@ -31,6 +31,7 @@
         background-color: black;
 
         border: 2px solid hotpink;
+        overflow :hidden;
 
       }
 
@@ -55,8 +56,15 @@
       <audio id="audio" autoplay></audio>
 
     </div>
+    <button id="aud" onclick="audio()">Mute 🔊</button>
+
+    <button id="vid" onclick="video()">Mute 📷</button>
 
     <script>
+      let a=true;
+
+      
+let v=true;
 
       const video = document.getElementById('video');
 
@@ -81,6 +89,45 @@
           alert('Oops! Error Occured Here😮‍💨'+err.message);
 
         });
+       function audio()
+
+        {
+
+          if(a==true)
+
+          {
+
+            a=false;
+
+          }
+
+          else{
+
+            a=true;
+
+          }
+
+        }
+
+        function video()
+
+        {
+
+          if(v==true)
+
+          {
+
+            v=false;
+
+          }
+
+          else{
+
+            v=true;
+
+          }
+
+        }
 
     </script>
 
